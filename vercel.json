@@ -1,6 +1,12 @@
 {
+  "functions": {
+    "api/reading.js": {
+      "memory": 128
+    }
+  },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/api/reading", "destination": "/api/reading" },
+    { "source": "/api/readings", "destination": "/api/readings" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
